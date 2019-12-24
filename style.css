@@ -62,6 +62,9 @@ button:hover {
 .main-header {
     background: #131c27;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
 nav {
@@ -164,6 +167,129 @@ nav ul {
     }
 }
 
+/* BENEFITS SECTION */
+.benefits-header {
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.benefits-header h3 {
+    padding: 1rem;
+}
+
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1), 0 2rem 2rem rgba(0, 0, 0, .1);
+    text-align: center;
+}
+
+.cards img {
+    max-width: 15%;
+    margin: 2rem;
+}
+
+.card h4,
+.card p {
+    padding: 1rem;
+}
+
+
+.card-icon {
+    background: #2e445e;
+    text-align: center;
+}
+
+/* CONTACT SECTION */
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .5), transparent), url('/img/contact-mountain.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    background: rgba(19, 28, 39, 0.8);
+    width: 60%;
+    color: white;
+    border-radius: 2rem;
+}
+
+.form-header {
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form,
+.email-form {
+    padding: 3rem;
+    text-align: center;
+}
+
+.form-wrapper label {
+    margin: 0 3rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.form-wrapper input {
+    padding: 1rem 3rem;
+}
+
+/* FOOTER SECTION */
+footer {
+    color: white;
+    background: rgba(19, 28, 39, 1)
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h5 {
+    flex: 1 1 40rem;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 932px) {
     html {
@@ -193,5 +319,17 @@ nav ul {
     .locations-header h3 {
         background: rgba(19, 28, 39, 0.9);
         -webkit-text-fill-color: white;
+    }
+
+    .form-wrapper {
+        width: 90%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer h5 {
+        padding-bottom: 3rem;
     }
 }
